@@ -29,19 +29,45 @@ header {
 
 
 header h1 {
-    margin-top: -200px;
+    margin-top: -280px;
 }
 
 h1 {
-    color: rgb(32, 200, 60);
-    font-size: 60px;
+    color: rgb(25, 209, 56);
+    font-size: 70px;
     font-family: 'Press Start 2P';
 }
 
 p {
-    text-shadow: 2px 2px rgb(246, 15, 15);
-    font-size: 40px;
+    color: rgb(244, 94, 57);
+    text-shadow: 2px 2px rgb(130, 225, 145);
+    font-size: 50px;
 }
+
+h4 {
+
+  font-family: 'Press Start 2P';
+  text-align: start;
+  margin-top: 0px;
+  padding: 0;
+  color: rgb(25, 209, 56)
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+     
+    
+}
+
+p2 {
+
+  text-align: start;
+  color:rgb(130, 225, 145);
+  font-family: 'Exo' Sans-serif;
+  font-size: smaller;
+  padding-bottom: 0;
+}
+
+
 
 header, header:before {
     background: 50% 50% / cover;
@@ -75,12 +101,12 @@ header::before {
 
 .posts {
 
-    margin: 100px 50px 50px 50px;
-    position:sticky;
+    box-sizing:border-box;
+    margin: 100px 50px 50px 50px; 
+    position: sticky;
     padding: 0;
     min-height: 800px;
     background:rgb(8, 8, 8);
-    display: grid;
     transition: 0.4s;
     z-index: 2;
     border: 1.5px solid rgb(31, 155, 9);
@@ -93,7 +119,7 @@ header::before {
     transition: 0.4s;
     padding: 0;
     min-height: 800px;
-    background:rgb(14, 14, 14);
+    background:rgb(15, 15, 15);
     display: grid;
     z-index: 2;
     border: 1.5px solid rgb(31, 155, 9);
@@ -103,41 +129,11 @@ header::before {
 
 
 .container {
-    margin: 10px 60px 40px 60px;
-    padding: 0;
+  position: relative;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
-
-
-
-
-
-    
-
-
-
-h4 {
-
-    font-family: 'Press Start 2P';
-    text-align: start;
-    margin-top: 0px;
-    padding: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 1.2;
-        color: inherit;
-      
-}
-
-p2 {
-
-    text-align: start;
-    font-family: 'Exo' Sans-serif;
-    font-size: smaller;
-    padding-bottom: 0;
-}
-
 
 /*
 
@@ -186,6 +182,7 @@ p2 {
 .row {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
     align-items:center;
     
   }
@@ -193,6 +190,7 @@ p2 {
   .row-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
     flex-wrap: wrap;
     align-items:flex-start;
     
@@ -206,21 +204,12 @@ p2 {
   /* Left & Right Post */
 
 .left-image-post {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+  padding: 40px 40px 40px 40px;
   border-bottom: 2px solid rgba(250, 250, 250, 0.1);
   margin-top: 10px;
-  padding-top: 20px;
+
 }
 
-.left-image,
-.right-image {
-
-  display: grid;
-  border-radius: 5px;
-  align-content: center;
-  justify-content: center;
-}
 
 
 .right-image-post p,
